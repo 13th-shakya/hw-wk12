@@ -24,7 +24,7 @@ class ServiceActivity : AppCompatActivity() {
         }
 
         binding.btnStartService.setOnClickListener {
-            startService(Intent(this, MyService::class.java))
+            startService(Intent(this, SleepService::class.java))
             Toast.makeText(this, "Service started", Toast.LENGTH_SHORT).show()
             finish()
         }
