@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Kotlin Homework 4</string>
+    <string name="service_btn">Service</string>
+    <string name="broadcast_receiver_btn">BroadcastReceiver</string>
 </resources>
