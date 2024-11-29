@@ -1,6 +1,8 @@
 package com.example.kotlinhomework4
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,6 +21,12 @@ class ServiceActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        binding.btnStartService.setOnClickListener {
+            startService(Intent(this, MyService::class.java))
+            Toast.makeText(this, "Service started", Toast.LENGTH_SHORT).show()
+            finish()
         }
     }
 }
