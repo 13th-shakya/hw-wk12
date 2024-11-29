@@ -7,4 +7,45 @@
     android:layout_height="match_parent"
     tools:context=".BroadcastReceiverActivity">
 
+    <TextView
+        android:id="@+id/tvBroadcastReceiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Choose a music channel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBroadcastReceiver">
+
+        <Button
+            android:id="@+id/btnMusicChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/music_btn" />
+
+        <Button
+            android:id="@+id/btnNewsChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/news_btn" />
+
+        <Button
+            android:id="@+id/btnSportChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sport_btn" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

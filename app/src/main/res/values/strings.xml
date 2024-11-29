@@ -4,4 +4,7 @@
     <string name="broadcast_receiver_btn">BroadcastReceiver</string>
     <string name="start_service_btn">Start Service</string>
     <string name="success_tv">Success</string>
+    <string name="music_btn">Music</string>
+    <string name="news_btn">News</string>
+    <string name="sport_btn">Sport</string>
 </resources>
